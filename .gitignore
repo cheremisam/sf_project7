@@ -1,0 +1,8 @@
+sa.json
+.terraform
+.terraform.lock.hcl
+.terraform.tfstate.lock.info
+terraform.tfstate
+terraform.tfstate.backup
+secret.tfvars
+key.txt

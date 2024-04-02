@@ -1,0 +1,22 @@
+- name: "Install soft"
+  hosts: "all"
+  become: true
+  tasks:
+  - name: Install docker
+    ansible.builtin.package:
+      name: docker.io
+      state: present
+  - name: Run docker service
+    ansible.builtin.service:
+      name: docker
+      state: started
+  - name: Install postgresql-server
+    ansible.builtin.package:
+      name: 
+        - postgresql
+        - postgresql-contrib
+      state: present
+  - name: Start postgresql
+    ansible.builtin.service:
+      name: postgresql
+      state: started

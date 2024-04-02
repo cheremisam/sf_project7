@@ -1,0 +1,3 @@
+flask
+Psycopg2
+ConfigParser
